@@ -1,4 +1,4 @@
-package pleaseLast;
+package onetwo;
 
 
 import java.io.PrintWriter;
@@ -8,10 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import ddf.minim.AudioPlayer;
 import ddf.minim.AudioSample;
 import ddf.minim.Minim;
 import ddf.minim.analysis.FFT;
+
+
 
 public class pleasetell {
 		
@@ -21,7 +22,7 @@ public class pleasetell {
 			try {
 				
 				Minim minim = MinimImpl.getMinimInstance();
-				AudioSample jingle = minim.loadSample("d:\\y2mate.com - artemis_lindsey_stirling_VsN7E35LpJE.mp3", 2048);
+				AudioSample jingle = minim.loadSample("d:\\y2mate.com - maroon_5_memories_SlPhMPnQ58k.mp3", 2048);
 
 				
 				float[] leftChannel = jingle.getChannel(AudioSample.LEFT);

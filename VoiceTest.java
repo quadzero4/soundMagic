@@ -1,9 +1,11 @@
-package pleaseLast;
-
+package onetwo;
 import java.util.ArrayList;
 import java.util.List;
 
-import ss.pleasetell;
+import ddf.minim.AudioPlayer;
+import ddf.minim.Minim;
+
+
 
 public class VoiceTest {
 
@@ -24,7 +26,7 @@ public class VoiceTest {
 		}
 		javaSoundRecorder.finish();
 		*/
-		Freq f = new Freq();
+	
 		
 //		double a4 = 452;
 //		for(int i = 1; i <= 16; i++) {
@@ -63,14 +65,20 @@ public class VoiceTest {
 			Thread.sleep(500);
 			System.out.print("\n\n");
 		}
+			Freq f = new Freq();
 		*/
+		
 		pleasetell tel = new pleasetell();
 		List<Double> frefre = tel.freqVisualizer();
 		
 		for(int i = 0 ; i< frefre.size() ; i++) {
 			System.out.println(frefre.get(i));
 		}
-	
+		/*
+		Minim minim = MinimImpl.getMinimInstance();
+		AudioPlayer song = minim.loadFile("piano-µµ#.mp3");
+		  song.play();
+	*/
 	}
 
 }
