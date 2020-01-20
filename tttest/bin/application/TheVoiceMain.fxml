@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.TheVoiceMain">
+   <children>
+      <StackPane prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+               
+                  <ImageView pickOnBounds="true" preserveRatio="true" >
+                     <image>
+                        <Image url="@../img/sky-1077861_1280.jpg" />
+                     </image>
+                  </ImageView>
+                  
+               </children>
+            </Pane>
+            <Pane prefHeight="800.0" prefWidth="1302.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="522.0" layoutY="506.0" pickOnBounds="true" preserveRatio="true" fx:id="startbtn">
+                     <image>
+                        <Image url="@../img/startbtn.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="525.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true" fx:id="exitbtn">
+                     <image>
+                        <Image url="@../img/endbtn.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
